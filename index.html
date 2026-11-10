@@ -20,7 +20,8 @@ main{display:grid;grid-template-columns:minmax(300px,380px) 1fr;gap:16px;padding
 .panel{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px}
 .panel h3{margin:0 0 10px;font-size:15px}
 label{display:block;font-size:12.5px;color:var(--mut);margin:9px 0 3px}
-input,select{width:100%;padding:9px 10px;border:1px solid var(--line);border-radius:7px;font-size:14px;font-family:inherit}
+.bl .gcb{border:1px dashed #9aa4b8;border-radius:8px;padding:10px 14px;margin-bottom:14px;font-size:13px;white-space:pre-line;color:#344054}
+input,select,textarea{width:100%;padding:9px 10px;border:1px solid var(--line);border-radius:7px;font-size:14px;font-family:inherit}
 input:focus{outline:2px solid #93b4ff;border-color:var(--pri)}
 .row{display:flex;gap:8px;align-items:end}.row>*{flex:1}
 .btn{border:0;background:var(--pri);color:#fff;padding:10px 14px;border-radius:8px;font-size:14px;cursor:pointer;font-family:inherit}
@@ -35,25 +36,25 @@ input:focus{outline:2px solid #93b4ff;border-color:var(--pri)}
 .tag{font-size:12px;padding:2px 8px;border-radius:99px;background:#e0e7ff;color:var(--pri)}.tag.h{background:#dcfce7;color:#166534}
 .hide{display:none!important}
 /* ===== TỜ A4 ===== */
-.sh{width:794px;min-height:1123px;background:#fff;padding:48px 48px 40px;font-family:"Segoe UI",Arial,sans-serif;color:#344054;font-size:14px}
+.sh{width:794px;min-height:1123px;background:#fff;padding:40px 48px 30px;font-family:"Segoe UI",Arial,sans-serif;color:#344054;font-size:14px}
 .bl .top{display:flex;justify-content:space-between;border-bottom:3px solid #1e3a8a;padding-bottom:14px;margin-bottom:20px}
 .bl h1{margin:0;color:#1e3a8a;font-size:27px}.bl .qg{color:#667085;font-size:13px;margin-top:8px}
 .bl .rt{text-align:right;font-size:13px}.bl .rt b{color:#b42318}
-.bl .g2{display:grid;grid-template-columns:1fr 330px;gap:14px;margin-bottom:16px}
+.bl .g2{display:grid;grid-template-columns:1fr 296px;gap:14px;margin-bottom:14px}
 .bl .bx{border:1px solid #c7d2e6;border-radius:10px;padding:14px 16px;background:#f8f9fc;margin-bottom:14px}
 .bl .bx h4{margin:0 0 10px;color:#1e3a8a;font-size:14px;padding-bottom:8px;border-bottom:1px solid #e1e6f0}
-.bl .ln{display:flex;gap:10px;padding:6px 0}.bl .ln span{width:140px;flex:none;color:#667085}.bl .ln b{color:#111827}
+.bl .ln{display:flex;gap:10px;padding:5px 0}.bl .ln span{width:140px;flex:none;color:#667085}.bl .ln b{color:#111827}
 .bl .qrc{border:1px solid #9cc2f0;background:#eef5ff;border-radius:10px;padding:14px;text-align:center}
-.bl .card{background:linear-gradient(160deg,#9fd3ff,#62b0f5);border-radius:14px;padding:26px 18px;min-height:380px}
+.bl .card{background:linear-gradient(160deg,#9fd3ff,#62b0f5);border-radius:14px;padding:22px 14px;min-height:340px}
 .bl .inn{background:rgba(255,255,255,.55);border-radius:12px;padding:18px 12px;text-align:center;font-size:10px;color:#334155}
 .bl .qimg{background:#fff;border-radius:8px;width:170px;height:170px;margin:12px auto;display:flex;align-items:center;justify-content:center;overflow:hidden;color:#999;font-size:12px}
 .bl .qimg img{width:100%;height:100%;object-fit:contain}
 .bl .qcap{font-weight:700;color:#1e3a8a;font-size:12.5px;margin-top:10px}
 .bl .warn{background:#fffbe6;border:1px solid #f3dc87;border-radius:8px;padding:14px 16px;color:#7a3b0a;font-size:13px;margin-bottom:14px}
 .bl .warn h5{margin:0 0 8px;font-size:14px}.bl .warn li{margin:6px 0}.bl .warn ul{margin:0;padding-left:16px}
-.bl .leg{background:#f0f3f8;border-left:4px solid #0a84d6;padding:12px 14px;font-style:italic;font-size:13px;margin-bottom:22px}
+.bl .leg{background:#f0f3f8;border-left:4px solid #0a84d6;padding:12px 14px;font-style:italic;font-size:13px;margin-bottom:16px}
 .bl .sg{display:flex;justify-content:space-around;text-align:center}.bl .sg b.t{color:#1e3a8a}.bl .sg i{display:block;color:#888;font-size:12px}
-.bl .sg .nm{margin-top:60px;font-weight:700;color:#111}
+.bl .sg .nm{margin-top:46px;font-weight:700;color:#111}
 .hd{text-align:center}
 .hd .ck{width:64px;height:64px;border-radius:50%;background:#16a34a;color:#fff;font-size:38px;line-height:64px;margin:30px auto 12px}
 .hd h2{margin:0;color:#15803d;font-size:23px}.hd .sub{color:#667085;margin:6px 0 24px}
@@ -65,7 +66,20 @@ input:focus{outline:2px solid #93b4ff;border-color:var(--pri)}
 .hd .ln span{color:#667085}.hd .ln b{color:#111827;text-align:right}
 .hd .ft{color:#667085;font-size:12.5px;margin-top:26px;line-height:1.7}
 #off{position:fixed;left:-9999px;top:0}
-@media print{body>*:not(#pa){display:none!important}#pa{position:static!important;left:0!important}.sh{box-shadow:none}@page{size:A4;margin:0}}
+.tag.t{background:#fef3c7;color:#92400e}
+.sh{position:relative}
+.tt h1{line-height:1.25}
+.tt .okb{display:flex;align-items:center;gap:14px;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:12px;padding:14px 18px;margin-bottom:16px}
+.tt .okb .c{width:46px;height:46px;border-radius:50%;background:#16a34a;color:#fff;font-size:28px;line-height:46px;text-align:center;flex:none;font-weight:700}
+.tt .okb .t1{font-size:17px;color:#15803d}.tt .okb .t2{font-size:13px;color:#475467;margin-top:4px}
+.tt .okb.part{background:#fffbeb;border-color:#f3dc87}.tt .okb.part .c{background:#d97706}.tt .okb.part .t1{color:#b45309}
+.tt .chip{display:inline-block;color:#fff;font-size:12px;font-weight:700;padding:3px 10px;border-radius:99px;margin-left:8px;vertical-align:middle}
+.tt .cols{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}.tt .cols .bx{margin:0}
+.tt .cols .ln span{width:118px}.tt .sg .nm{margin-top:44px}.tt .tot span{color:#111827;font-weight:700}.tt .leg{margin-bottom:16px}.tt .bx3 .ln span{width:240px}
+.tt .tot{border-top:1px solid #c7d2e6;margin-top:4px;padding-top:9px}.tt .tot b{font-size:15px}
+.tt .pg{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.tt .pg img{width:100%;max-height:270px;object-fit:contain;border:1px solid #d8dee9;border-radius:6px;background:#fff}
+@media print{*{-webkit-print-color-adjust:exact;print-color-adjust:exact}body>*:not(#pa){display:none!important}#pa{position:static!important;left:0!important}.sh{box-shadow:none}@page{size:A4;margin:0}}
 </style>
 </head>
 <body>
@@ -73,6 +87,7 @@ input:focus{outline:2px solid #93b4ff;border-color:var(--pri)}
 <nav>
 <button id="tBL" class="on" onclick="go('bl')">Biên lai ghi nợ</button>
 <button id="tHD" onclick="go('hd')">Hóa đơn thanh toán</button>
+<button id="tTT" onclick="go('tt')">Biên lai thanh toán nợ</button>
 <button id="tHS" onclick="go('hs')">Lịch sử (<span id="cnt">0</span>)</button>
 </nav>
 <main id="ed">
@@ -113,31 +128,40 @@ const wr=a=>{try{localStorage.setItem(KEY,JSON.stringify(a))}catch(_){alert('Kh�
 function uniq(type,fn){const used=new Set(hist().map(h=>h.d.code));let c;do{c=fn()}while(used.has(c));return c}
 const genBL=()=>uniq('bl',()=>rnd(4)+'/BLTNNHP/'+rnd(4)+'/'+rnd(4));
 const genHD=()=>uniq('hd',()=>'HDTTNHP/7788/'+rnd(4));
+const genTT=()=>uniq('tt',()=>rnd(4)+'/BLTTNTC/'+rnd(4)+'/'+rnd(4));
 
 const FIELDS={
-bl:[['ngay','Ngày lập','date'],['cho','Người cho mượn','text'],['muon','Người mượn nợ','text'],['tien','Số tiền mượn (VNĐ)','number'],['chu','Bằng chữ (tự động, có thể sửa)','text'],['lai','Lãi suất quá hạn (%/ngày)','number'],['phi','Phí nhắc nợ (VNĐ/tuần)','number'],['qrTen','QR: Tên chủ tài khoản','text'],['qrStk','QR: Số tài khoản','text'],['qrNh','QR: Ngân hàng / chi nhánh','text'],['qrNd','QR: Nội dung (dòng cuối thẻ)','text']],
-hd:[['tien','Số tiền giao dịch (VNĐ)','number'],['ft','Mã giao dịch (FT ID)','text'],['tg','Thời gian thực hiện','datetime-local'],['tt','Trạng thái','text'],['nd','Nội dung chuyển khoản','text'],['tenDi','Tên tài khoản đi','text'],['nhDi','Ngân hàng chuyển','text'],['stkDi','Số tài khoản đi','text'],['tenDen','Tên tài khoản đến','text'],['nhDen','Ngân hàng nhận','text'],['stkDen','Số tài khoản đến','text']]};
-const blank=t=>t=='bl'?{ngay:today(),cho:'',muon:'',tien:'',chu:'',hans:[{han:today(),tien:''}],lai:0.055,phi:2000,qrTen:'',qrStk:'',qrNh:'',qrNd:'',qr:'',code:genBL()}
- :{tien:'',ft:'FT'+rnd(11),tg:nowLocal(),tt:'Thành công',nd:'',tenDi:'',nhDi:'',stkDi:'',tenDen:'',nhDen:'',stkDen:'',code:genHD()};
+tt:[['ngay','Ngày lập biên lai thanh toán','date'],['ref','Số biên lai ghi nợ gốc (tham chiếu)','text'],['ngayGoc','Ngày lập biên lai nợ gốc','date'],['cho','Người cho mượn (người nhận tiền)','text'],['muon','Người mượn nợ (người trả tiền)','text'],['tien','Số tiền mượn gốc (VNĐ)','number'],['han','Hạn trả thỏa thuận','date'],['lai','Lãi suất quá hạn (%/ngày)','number'],['phi','Phí nhắc nợ (VNĐ/tuần)','number'],['tgTra','Thời gian thanh toán','datetime-local'],['pt','Phương thức thanh toán','select'],['ptCT','Chi tiết phương thức (ngân hàng, ví, người nhận…)','text'],['maGD','Mã giao dịch / số tham chiếu thanh toán','text'],['laiTien','Tiền lãi quá hạn (VNĐ) - để trống = tự tính','number'],['phiTien','Phí nhắc nợ phát sinh (VNĐ) - để trống = tự tính','number'],['phiNR','Phí dịch vụ nạp - rút (VNĐ)','number'],['ttNR','Trạng thái phí nạp - rút','select'],['thuc','Số tiền thực nhận (VNĐ) - để trống = đủ tổng phải trả','number'],['ghichu','Ghi chú','textarea']],
+bl:[['ngay','Ngày lập','date'],['cho','Người cho mượn','text'],['muon','Người mượn nợ','text'],['tien','Số tiền mượn (VNĐ)','number'],['chu','Bằng chữ (tự động, có thể sửa)','text'],['lai','Lãi suất quá hạn (%/ngày)','number'],['phi','Phí nhắc nợ (VNĐ/tuần)','number'],['phiNR','Phí dịch vụ nạp - rút (VNĐ)','number'],['ttNR','Trạng thái phí nạp - rút','select'],['qrTen','QR: Tên chủ tài khoản','text'],['qrStk','QR: Số tài khoản','text'],['qrNh','QR: Ngân hàng / chi nhánh','text'],['qrNd','QR: Nội dung (dòng cuối thẻ)','text'],['ghichu','Ghi chú','textarea']],
+hd:[['tien','Số tiền giao dịch (VNĐ)','number'],['ft','Mã giao dịch (FT ID)','text'],['tg','Thời gian thực hiện','datetime-local'],['tt','Trạng thái','text'],['nd','Nội dung chuyển khoản','text'],['phiNR','Phí dịch vụ nạp - rút (VNĐ)','number'],['ttNR','Trạng thái phí nạp - rút','select'],['tenDi','Tên tài khoản đi','text'],['nhDi','Ngân hàng chuyển','text'],['stkDi','Số tài khoản đi','text'],['tenDen','Tên tài khoản đến','text'],['nhDen','Ngân hàng nhận','text'],['stkDen','Số tài khoản đến','text'],['ghichu','Ghi chú','textarea']]};
+const blank=t=>t=='tt'?{ngay:today(),ref:'',ngayGoc:'',cho:'',muon:'',tien:'',han:today(),lai:0.055,phi:2000,tgTra:nowLocal(),pt:'Tiền mặt',ptCT:'',maGD:'',laiTien:'',phiTien:'',phiNR:5000,ttNR:'Chưa trả',thuc:'',ghichu:'',proofs:[],code:genTT()}:t=='bl'?{ngay:today(),cho:'',muon:'',tien:'',chu:'',hans:[{han:today(),tien:''}],lai:0.055,phi:2000,qrTen:'',qrStk:'',qrNh:'',qrNd:'',phiNR:5000,ttNR:'Chưa trả',ghichu:'',qr:'',code:genBL()}
+ :{tien:'',ft:'FT'+rnd(11),tg:nowLocal(),tt:'Thành công',nd:'',tenDi:'',nhDi:'',stkDi:'',tenDen:'',nhDen:'',stkDen:'',phiNR:5000,ttNR:'Chưa trả',ghichu:'',code:genHD()};
 
 let type='bl',d=blank('bl'),editId=null;
 
-function go(v){['BL','HD','HS'].forEach(x=>$('t'+x).classList.remove('on'));
+function go(v){['BL','HD','TT','HS'].forEach(x=>$('t'+x).classList.remove('on'));
  if(v=='hs'){$('tHS').classList.add('on');$('ed').classList.add('hide');$('hs').classList.remove('hide');drawHist();return}
  $('hs').classList.add('hide');$('ed').classList.remove('hide');$('t'+v.toUpperCase()).classList.add('on');
  if(v!=type||editId){type=v;editId=null;d=blank(v)}build()}
 function fresh(){editId=null;d=blank(type);build()}
+function fld(k,t){const v=d[k];
+ if(t=='select')return `<select id="f_${k}" onchange="chg('${k}',this.value)">${(OPT[k]||['Chưa trả','Đã trả']).map(o=>`<option ${v==o?'selected':''}>${o}</option>`).join('')}</select>`;
+ if(t=='textarea')return `<textarea id="f_${k}" rows="3" oninput="chg('${k}',this.value)">${e(v)}</textarea>`;
+ return `<input id="f_${k}" type="${t}" ${t=='number'?'step="any"':''} value="${e(v)}" oninput="chg('${k}',this.value)">`}
 function build(){
- $('ft').textContent=(type=='bl'?'Biên lai ghi nợ':'Hóa đơn thanh toán')+(editId?' (đang chỉnh sửa)':'');
- let h=`<label>${type=='bl'?'Số biên lai':'Mã giao dịch'} (tự tạo, có thể sửa)</label><div class="row"><input id="f_code" value="${e(d.code)}" oninput="d.code=this.value;draw()"><button class="btn g s" style="flex:none" onclick="regen()">Đổi số</button></div>`;
- FIELDS[type].forEach(([k,l,t])=>{h+=`<label>${l}</label><input id="f_${k}" type="${t}" ${t=='number'?'step="any"':''} value="${e(d[k])}" oninput="chg('${k}',this.value)">`;if(type=='bl'&&k=='chu')h+=hform()});
+ $('ft').textContent=TN2[type]+(editId?' (đang chỉnh sửa)':'');
+ let h=`<label>${type=='hd'?'Mã giao dịch':'Số biên lai'} (tự tạo, có thể sửa)</label><div class="row"><input id="f_code" value="${e(d.code)}" oninput="d.code=this.value;draw()"><button class="btn g s" style="flex:none" onclick="regen()">Đổi số</button></div>`;
+ if(type=='tt')h=impform()+h;
+ FIELDS[type].forEach(([k,l,t])=>{h+=`<label>${l}</label>${fld(k,t)}`;if(type=='bl'&&k=='chu')h+=hform();if(type=='tt'&&k=='maGD')h+=pform()});
  if(type=='bl')h+=`<label>Ảnh mã QR (tải lên: tự cắt QR và điền thông tin)</label><input type="file" accept="image/*" onchange="upQR(this.files[0])"><label style="display:flex;gap:8px;align-items:center;color:var(--ink);font-size:13.5px"><input type="checkbox" style="width:auto" ${autoCrop?'checked':''} onchange="autoCrop=this.checked;procQR()"> Tự động cắt xén, chỉ lấy mã QR giao dịch</label><div class="note">${e(qrMsg)}</div>${d.qr?'<button class="btn r s" style="margin-top:6px" onclick="d.qr=\'\';build()">Xóa ảnh QR</button>':''}`;
  $('form').innerHTML=h;draw()}
-function regen(){d.code=type=='bl'?genBL():genHD();$('f_code').value=d.code;draw()}
+function regen(){d.code=({bl:genBL,hd:genHD,tt:genTT})[type]();$('f_code').value=d.code;draw()}
 function chg(k,v){d[k]=v;if(type=='bl'&&k=='tien'){d.chu=v?words(v):'';$('f_chu').value=d.chu}draw()}
 function upQR_old(f){if(!f)return;const r=new FileReader();r.onload=()=>{const im=new Image();im.onload=()=>{const m=600,s=Math.min(1,m/Math.max(im.width,im.height)),c=document.createElement('canvas');c.width=im.width*s;c.height=im.height*s;c.getContext('2d').drawImage(im,0,0,c.width,c.height);d.qr=c.toDataURL('image/png');build()};im.src=r.result};r.readAsDataURL(f)}
 
-function tpl(t,x){
+function nr(x,cur){if(x.phiNR===undefined||x.phiNR==='')return'';const ok=x.ttNR=='Đã trả';
+ return `<div class="ln"><span>Phí dịch vụ nạp - rút:</span><b>${money(x.phiNR)} ${cur} — <i style="font-style:normal;color:${ok?'#16a34a':'#b42318'}">${ok?'Đã trả':'Chưa trả'}</i></b></div>`}
+function tpl(t,x){if(t=='tt')return ttTpl(x);
  if(t=='bl'){const lai=Number(x.lai)||0,nam=(Math.floor(lai*365*10)/10).toFixed(1),phi=money(x.phi),H=hs(x),n=H.length,hh=dmy(H[n-1].han),all=H.map(z=>dmy(z.han)).join(', '),AP=n>1?'hạn của từng kỳ ('+all+')':'ngày '+hh;
  return `<div class="sh bl"><div class="top"><div><h1>BIÊN LAI GHI NỢ</h1><div class="qg">CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM — ĐỘC LẬP - TỰ DO - HẠNH PHÚC</div></div><div class="rt">Số biên lai: <b>${e(x.code)}</b><br><span style="line-height:2">Ngày lập: ${dmy(x.ngay)}</span></div></div>
 <div class="g2"><div>
@@ -150,7 +174,7 @@ function tpl(t,x){
 <div class="bx"><h4>2. LÃI SUẤT & PHÍ PHÁT SINH KHI QUÁ HẠN</h4>
 <div class="ln"><span>Thời điểm áp dụng:</span><b>Sau hết ${AP}</b></div>
 <div class="ln"><span>Lãi suất quá hạn:</span><b>${String(lai).replace('.',',')}% / ngày (tương đương ${String(nam).replace('.',',')}%/năm)</b></div>
-<div class="ln"><span>Phí dịch vụ nhắc nợ:</span><b>${phi} VNĐ / tuần (thỏa thuận trước)</b></div></div></div>
+<div class="ln"><span>Phí dịch vụ nhắc nợ:</span><b>${phi} VNĐ / tuần (thỏa thuận trước)</b></div>${nr(x,'VNĐ')}</div></div>
 <div class="qrc"><div class="card"><div class="inn"><b style="font-size:11px">${e(x.qrNh?x.qrNh+' · ':'')}VIETQR · napas 247</b>
 <div class="qimg">${x.qr?`<img src="${x.qr}">`:'Ảnh mã QR'}</div>
 <b style="font-size:11px">${e(x.qrTen)}</b><br>Tài khoản: ${e(x.qrStk)}<br>${e(x.qrNh)}<br><div style="margin-top:8px">${e(x.qrNd)}</div></div></div>
@@ -159,7 +183,7 @@ function tpl(t,x){
 <li>Người mượn nợ (${e(x.muon)}) cần đọc kỹ toàn bộ thông tin cá nhân, số tiền đã mượn, hạn trả nợ cùng quy định lãi suất và phí dịch vụ phát sinh trước khi ký xác nhận.</li>
 <li>Nếu trả nợ đúng hoặc trước ${AP}, số tiền phải trả duy nhất là tiền gốc <b>${money(x.tien)} VNĐ</b> (không phát sinh bất kỳ khoản phí hay lãi nào).</li>
 <li>Sau hết ${n>1?'hạn của kỳ chưa thanh toán':'ngày '+hh}, phí dịch vụ nhắc nợ (${phi}đ/tuần) và lãi suất (${String(lai).replace('.',',')}%/ngày) sẽ tự động kích hoạt và bắt đầu tính dồn vào tổng tiền nợ.</li></ul></div>
-<div class="leg"><b>XÁC NHẬN GIÁ TRỊ PHÁP LÝ:</b> Việc người mượn ký tên bên dưới xác nhận đã hoàn toàn hiểu rõ, tự nguyện đồng ý với toàn bộ các điều khoản nêu trên. Biên lai ghi nợ này có giá trị pháp lý làm căn cứ giải quyết nghĩa vụ tài chính giữa hai bên.</div>
+${x.ghichu?`<div class="gcb"><b>GHI CHÚ:</b> ${e(x.ghichu)}</div>`:''}<div class="leg"><b>XÁC NHẬN GIÁ TRỊ PHÁP LÝ:</b> Việc người mượn ký tên bên dưới xác nhận đã hoàn toàn hiểu rõ, tự nguyện đồng ý với toàn bộ các điều khoản nêu trên. Biên lai ghi nợ này có giá trị pháp lý làm căn cứ giải quyết nghĩa vụ tài chính giữa hai bên.</div>
 <div class="sg"><div><b class="t">NGƯỜI CHO MƯỢN</b><i>(Ký và ghi rõ họ tên)</i><div class="nm">${e(x.cho)}</div></div><div><b class="t">NGƯỜI MƯỢN NỢ</b><i>(Ký và ghi rõ họ tên)</i><div class="nm">${e(x.muon)}</div></div></div></div>`}
  const tg=x.tg?dmy(x.tg)+' - '+x.tg.slice(11,16)+':00':'';
  return `<div class="sh hd"><div class="ck">✓</div><h2>CHUYỂN KHOẢN THÀNH CÔNG</h2><div class="sub">Hóa đơn xác nhận giao dịch ngân hàng trực tuyến</div>
@@ -169,7 +193,7 @@ function tpl(t,x){
 <div class="ln"><span>Mã giao dịch (FT ID)</span><b>${e(x.ft)}</b></div>
 <div class="ln"><span>Thời gian thực hiện</span><b>${tg}</b></div>
 <div class="ln"><span>Trạng thái</span><b style="color:#16a34a">${e(x.tt)}</b></div>
-<div class="ln"><span>Nội dung chuyển khoản</span><b>${e(x.nd)}</b></div></div>
+<div class="ln"><span>Nội dung chuyển khoản</span><b>${e(x.nd)}</b></div>${nr(x,'VND')}</div>
 <div class="sec"><h4>THÔNG TIN NGƯỜI CHUYỂN</h4>
 <div class="ln"><span>Tên tài khoản đi</span><b>${e(x.tenDi)}</b></div>
 <div class="ln"><span>Ngân hàng chuyển</span><b>${e(x.nhDi)}</b></div>
@@ -178,7 +202,7 @@ function tpl(t,x){
 <div class="ln"><span>Tên tài khoản đến</span><b>${e(x.tenDen)}</b></div>
 <div class="ln"><span>Ngân hàng nhận</span><b>${e(x.nhDen)}</b></div>
 <div class="ln"><span>Số tài khoản đến</span><b>${e(x.stkDen)}</b></div></div>
-<div class="ft">Cảm ơn quý khách đã sử dụng dịch vụ thanh toán trực tuyến.<br>Đây là chứng từ điện tử hợp lệ được tự động tạo bởi hệ thống.</div></div>`}
+${x.ghichu?`<div class="sec"><h4>GHI CHÚ</h4><div style="white-space:pre-line;padding:6px 0">${e(x.ghichu)}</div></div>`:''}<div class="ft">Cảm ơn quý khách đã sử dụng dịch vụ thanh toán trực tuyến.<br>Đây là chứng từ điện tử hợp lệ được tự động tạo bởi hệ thống.</div></div>`}
 
 function draw(){$('pvbox').innerHTML=tpl(type,d);fit()}
 function fit(){const w=$('pvwrap').clientWidth-20,s=Math.min(1,w/794);$('pvbox').style.transform=`scale(${s})`;$('pvbox').style.width='794px';$('pvwrap').style.height=(1123*s+20)+'px'}
@@ -193,24 +217,27 @@ function save(){const a=hist();d.code=(d.code||'').trim();
  wr(a);cnt();build();return true}
 function cnt(){$('cnt').textContent=hist().length}
 function drawHist(){const a=hist();
- $('hs').innerHTML=a.length?a.map(h=>{const x=h.d,bl=h.t=='bl';
- return `<div class="hi"><div><span class="tag ${bl?'':'h'}">${bl?'Biên lai':'Hóa đơn'}</span> <b>${e(x.code)}</b><div class="note">${bl?e(x.cho)+' → '+e(x.muon):e(x.tenDi)+' → '+e(x.tenDen)} · ${money(x.tien)} VNĐ · lưu ${new Date(h.ts).toLocaleString('vi-VN')}</div></div>
+ $('hs').innerHTML=a.length?a.map(h=>{const x=h.d,bl=h.t!='hd';
+ return `<div class="hi"><div><span class="tag ${({bl:'',hd:'h',tt:'t'})[h.t]}">${({bl:'Biên lai nợ',hd:'Hóa đơn',tt:'Thanh toán nợ'})[h.t]}</span> <b>${e(x.code)}</b><div class="note">${bl?e(x.cho)+' → '+e(x.muon):e(x.tenDi)+' → '+e(x.tenDen)} · ${money(x.tien)} VNĐ · lưu ${new Date(h.ts).toLocaleString('vi-VN')}</div></div>
  <div class="acts" style="margin:0"><button class="btn s" onclick="edit('${h.id}')">Sửa</button><button class="btn g s" onclick="hp('${h.id}')">Tải PDF</button><button class="btn g s" onclick="hr('${h.id}')">In PDF</button><button class="btn r s" onclick="del('${h.id}')">Xóa</button></div></div>`}).join('')
  :'<div class="panel">Chưa có biên lai hay hóa đơn nào. Hãy tạo và bấm "Lưu vào lịch sử".</div>'}
 const find=id=>hist().find(h=>h.id==id);
 function edit(id){const h=find(id);if(!h)return;type=h.t;d={...h.d};editId=id;go2()}
-function go2(){$('hs').classList.add('hide');$('ed').classList.remove('hide');['BL','HD','HS'].forEach(x=>$('t'+x).classList.remove('on'));$('t'+type.toUpperCase()).classList.add('on');build()}
+function go2(){$('hs').classList.add('hide');$('ed').classList.remove('hide');['BL','HD','TT','HS'].forEach(x=>$('t'+x).classList.remove('on'));$('t'+type.toUpperCase()).classList.add('on');build()}
 function del(id){if(!confirm('Xóa mục này khỏi lịch sử?'))return;wr(hist().filter(h=>h.id!=id));if(editId==id)editId=null;cnt();drawHist()}
 const hp=id=>pdf(find(id)),hr=id=>prn(find(id));
 
 async function pdf(o){if(!o)return;const el=$('off');el.innerHTML=tpl(o.t,o.d);
- try{const imgs=[...el.querySelectorAll('img')];await Promise.all(imgs.map(i=>i.complete?1:new Promise(r=>i.onload=r)));
- const cv=await html2canvas(el.firstElementChild,{scale:2,backgroundColor:'#fff',useCORS:true});
- const {jsPDF}=window.jspdf,p=new jsPDF('p','mm','a4'),W=210,H=cv.height*W/cv.width;
- p.addImage(cv.toDataURL('image/jpeg',.95),'JPEG',0,0,W,Math.min(H,297));
- p.save((o.t=='bl'?'Bien-lai-':'Hoa-don-')+o.d.code.replace(/\//g,'-')+'.pdf')}
+ try{await ready(el);const sh=el.firstElementChild,n=paginate(sh),sc=Math.max(2,Math.min(4,Math.sqrt(16e6/(794*n*PH))));
+ const cv=await html2canvas(sh,{scale:sc,backgroundColor:'#fff',useCORS:true,logging:false});
+ const {jsPDF}=window.jspdf,p=new jsPDF({orientation:'p',unit:'mm',format:'a4',compress:true}),ph=cv.height/n;
+ for(let i=0;i<n;i++){const c=document.createElement('canvas');c.width=cv.width;c.height=Math.round(ph);const t=c.getContext('2d');t.fillStyle='#fff';t.fillRect(0,0,c.width,c.height);
+  t.drawImage(cv,0,Math.round(i*ph),cv.width,Math.round(ph),0,0,c.width,c.height);if(i)p.addPage();p.addImage(c.toDataURL('image/png'),'PNG',0,0,210,297,undefined,'FAST')}
+ const fn=({bl:'Bien-lai-',hd:'Hoa-don-',tt:'Bien-lai-thanh-toan-'})[o.t]+o.d.code.replace(/\//g,'-')+'.pdf';
+ let dl=null;try{dl=window.claude?await claude.use('downloads'):null}catch(_){}
+ if(dl){try{await dl.save({filename:fn,data:p.output('blob')})}catch(er){if(!er||er.code!='declined')throw er}}else p.save(fn)}
  catch(err){alert('Không xuất được PDF: '+err.message)}el.innerHTML=''}
-function prn(o){if(!o)return;$('pa').innerHTML=tpl(o.t,o.d);setTimeout(()=>{print();setTimeout(()=>$('pa').innerHTML='',500)},150)}
+async function prn(o){if(!o)return;const pa=$('pa');pa.innerHTML=tpl(o.t,o.d);await ready(pa);paginate(pa.firstElementChild);setTimeout(()=>{print();setTimeout(()=>pa.innerHTML='',500)},150)}
 
 /* ===== Nhiều hạn trả ===== */
 const hs=x=>{let a=Array.isArray(x.hans)?x.hans:[{han:x.han||'',tien:''}];a=a.filter(z=>z.han).sort((p,q)=>p.han<q.han?-1:1);return a.length?a:[{han:'',tien:''}]};
@@ -285,7 +312,7 @@ async function procQR(){const im=lastImg;if(!im)return;
  if(box)res=await dec(qrCanvas(im,box,800,0.14));
  if(!res){for(const m of [1000,1600]){const fc=fullCanvas(im,m);res=await dec(fc);if(res){if(!box&&res.pts){const xs=res.pts.map(p=>p.x/fc.k),ys=res.pts.map(p=>p.y/fc.k),x0=Math.min(...xs),y0=Math.min(...ys);box={x:x0,y:y0,w:Math.max(...xs)-x0,h:Math.max(...ys)-y0}}break}}}
  const cropped=!!(box&&autoCrop);
- d.qr=(cropped?qrCanvas(im,box,500,0.07):fullCanvas(im,500)).toDataURL('image/png');
+ d.qr=(cropped?qrCanvas(im,box,900,0.07):fullCanvas(im,500)).toDataURL('image/png');
  if(res){const p=vietqr(res.data),bank=BANKS[p.bin]||'',got=[];
   if(p.stk){d.qrStk=p.stk;got.push('số tài khoản')}if(bank){d.qrNh=bank;got.push('ngân hàng')}if(p.nd){d.qrNd=p.nd;got.push('nội dung')}
   if(p.ten){d.qrTen=p.ten;got.push('tên chủ tài khoản')}
@@ -293,6 +320,56 @@ async function procQR(){const im=lastImg;if(!im)return;
   qrMsg=(cropped?'Đã cắt mã QR. ':'Đã đọc mã QR. ')+(got.length?'Đã tự điền: '+got.join(', ')+'.':'QR này không có thông tin tài khoản để điền.')+(p.stk&&!p.ten&&!d.qrTen?' QR không chứa tên chủ tài khoản, hãy nhập tên.':'')}
  else qrMsg=box?(cropped?'Đã cắt mã QR':'Đã tìm thấy mã QR')+' nhưng chưa đọc được dữ liệu để tự điền. Hãy dùng ảnh rõ nét hơn hoặc nhập tay.':'Không tìm thấy mã QR trong ảnh nên giữ nguyên ảnh. Hãy dùng ảnh rõ nét hơn hoặc nhập tay.';
  build()}
+
+/* ===== Xuất PDF nét + ngắt trang theo khối ===== */
+const PH=1120,PM=30;
+const ready=async el=>{try{await document.fonts.ready}catch(_){}await Promise.all([...el.querySelectorAll('img')].map(i=>i.complete?1:new Promise(r=>{i.onload=i.onerror=r})))};
+function paginate(sh){sh.style.position='relative';sh.style.minHeight='0';
+ for(const k of [...sh.children]){const top=k.offsetTop,h=k.offsetHeight,pg=Math.floor(top/PH);
+  if(h<PH-2*PM&&top+h>(pg+1)*PH-PM)k.style.marginTop=((parseFloat(getComputedStyle(k).marginTop)||0)+((pg+1)*PH+PM-top))+'px'}
+ const l=sh.lastElementChild,n=Math.max(1,Math.ceil((l.offsetTop+l.offsetHeight+10)/PH));sh.style.minHeight=n*PH+'px';return n}
+
+/* ===== Biên lai thanh toán nợ thành công ===== */
+const OPT={ttNR:['Chưa trả','Đã trả'],pt:['Tiền mặt','Chuyển khoản ngân hàng','Quét mã VietQR','Ví điện tử','Thẻ / POS','Khác']};
+const TN2={bl:'Biên lai ghi nợ',hd:'Hóa đơn thanh toán',tt:'Biên lai thanh toán nợ thành công'};
+const has=v=>v!==''&&v!==undefined&&v!==null;
+const ymd=s=>{const[a,b,c]=s.split('-').map(Number);return Date.UTC(a,b-1,c)};
+function calc(x){
+ const g=Number(x.tien)||0,lai=Number(x.lai)||0,phi=Number(x.phi)||0,pay=(x.tgTra||'').slice(0,10),due=x.han||'';
+ const days=pay&&due?Math.round((ymd(pay)-ymd(due))/864e5):0,over=Math.max(0,days),early=Math.max(0,-days);
+ const laiT=has(x.laiTien)?Number(x.laiTien)||0:Math.round(g*lai/100*over);
+ const phiT=has(x.phiTien)?Number(x.phiTien)||0:(over>0?phi*Math.ceil(over/7):0);
+ const nr=has(x.phiNR)&&x.ttNR!='Đã trả'?Number(x.phiNR)||0:0;
+ const tong=g+laiT+phiT+nr,thuc=has(x.thuc)?Number(x.thuc)||0:tong;
+ return{g,lai,phi,days,over,early,laiT,phiT,nr,tong,thuc,con:Math.max(0,tong-thuc),thua:Math.max(0,thuc-tong),has:!!(pay&&due)}}
+function ttTpl(x){
+ const c=calc(x),full=c.con==0,tgS=x.tgTra?dmy(x.tgTra)+' - '+x.tgTra.slice(11,16):'',ok=x.ttNR=='Đã trả';
+ const lab=!c.has?'':c.early>0?'TRƯỚC HẠN '+c.early+' NGÀY':c.days==0?'ĐÚNG HẠN':'QUÁ HẠN '+c.over+' NGÀY';
+ const col=c.early>0?'#15803d':c.days==0?'#1d4ed8':'#d97706';
+ const sub=!c.has?'':c.early>0?'Khoản nợ đã được xử lý xong trước kỳ hạn '+c.early+' ngày (hạn trả: '+dmy(x.han)+').':c.days==0?'Khoản nợ được thanh toán đúng hạn ('+dmy(x.han)+').':'Khoản nợ được thanh toán sau hạn trả '+c.over+' ngày (hạn trả: '+dmy(x.han)+').';
+ const L=(a,b)=>'<div class="ln"><span>'+a+'</span>'+b+'</div>';
+ const P=x.proofs||[],pr=String(c.lai).replace('.',',');
+ return `<div class="sh bl tt">
+<div class="top"><div><h1 style="font-size:23px">BIÊN LAI THANH TOÁN NỢ THÀNH CÔNG</h1><div class="qg">CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM — ĐỘC LẬP - TỰ DO - HẠNH PHÚC</div></div><div class="rt">Số biên lai: <b>${e(x.code)}</b><br><span style="line-height:2">Ngày lập: ${dmy(x.ngay)}</span><br>Biên lai nợ gốc: <b style="color:#1e3a8a">${e(x.ref)}</b></div></div>
+<div class="okb ${full?'':'part'}"><div class="c">${full?'✓':'!'}</div><div><b class="t1">${full?'ĐÃ THANH TOÁN NỢ THÀNH CÔNG':'THANH TOÁN MỘT PHẦN — CÒN NỢ '+money(c.con)+' VNĐ'}</b>${lab?`<span class="chip" style="background:${col}">${lab}</span>`:''}<div class="t2">${e(sub)}</div></div></div>
+<div class="cols"><div class="bx"><h4>1. THÔNG TIN KHOẢN NỢ</h4>
+${L('Người cho mượn:','<b>'+e(x.cho)+'</b>')}${L('Người mượn nợ:','<b>'+e(x.muon)+'</b>')}${L('Số tiền mượn:','<b style="color:#b42318">'+money(c.g)+' VNĐ</b>')}${L('Hạn trả:','<b style="color:#d97706">'+hanTxt(x.han)+'</b>')}${L('Biên lai nợ gốc:','<b>'+e(x.ref)+(x.ngayGoc?' ('+dmy(x.ngayGoc)+')':'')+'</b>')}</div>
+<div class="bx"><h4>2. THÔNG TIN THANH TOÁN</h4>
+${L('Thời gian:','<b>'+tgS+'</b>')}${L('Phương thức:','<b>'+e(x.pt)+'</b>')}${x.ptCT?L('Chi tiết:','<b>'+e(x.ptCT)+'</b>'):''}${x.maGD?L('Mã giao dịch:','<b>'+e(x.maGD)+'</b>'):''}${L('Số tiền nhận:','<b style="color:#15803d">'+money(c.thuc)+' VNĐ</b>')}${L('Bằng chữ:','<i>'+e(words(c.thuc))+'</i>')}</div></div>
+<div class="bx bx3"><h4>3. QUYẾT TOÁN KHOẢN NỢ</h4>
+${L('Tiền gốc:','<b>'+money(c.g)+' VNĐ</b>')}${L('Tiền lãi quá hạn:','<b>'+money(c.laiT)+' VNĐ'+(c.over>0&&!has(x.laiTien)?' ('+pr+'%/ngày × '+c.over+' ngày)':'')+'</b>')}${L('Phí dịch vụ nhắc nợ:','<b>'+money(c.phiT)+' VNĐ'+(c.over>0&&!has(x.phiTien)?' ('+money(c.phi)+'đ × '+Math.ceil(c.over/7)+' tuần)':'')+'</b>')}${has(x.phiNR)?L('Phí dịch vụ nạp - rút:','<b>'+money(x.phiNR)+' VNĐ — <i style="font-style:normal;color:'+(ok?'#16a34a':'#b42318')+'">'+(ok?'Đã trả (không tính vào tổng)':'Chưa trả (tính vào tổng)')+'</i></b>'):''}
+<div class="ln tot"><span>TỔNG PHẢI THANH TOÁN:</span><b>${money(c.tong)} VNĐ</b></div>
+${L('Đã thanh toán:','<b style="color:#15803d">'+money(c.thuc)+' VNĐ</b>')}${c.thua>0?L('Thanh toán dư (hoàn lại):','<b>'+money(c.thua)+' VNĐ</b>'):L('Còn lại:','<b style="color:'+(full?'#15803d':'#b42318')+'">'+money(c.con)+' VNĐ</b>')}${L('TÌNH TRẠNG:','<b style="color:'+(full?'#15803d':'#b42318')+'">'+(full?'ĐÃ TẤT TOÁN':'CÒN NỢ')+'</b>')}</div>
+${P.length?`<div class="bx proofs"><h4>4. HÌNH ẢNH XÁC MINH THANH TOÁN</h4><div class="pg">${P.map(u=>`<img src="${u}">`).join('')}</div></div>`:''}
+${x.ghichu?`<div class="gcb"><b>GHI CHÚ:</b> ${e(x.ghichu)}</div>`:''}
+<div class="leg"><b>XÁC NHẬN THANH TOÁN:</b> Người nhận tiền (${e(x.cho)}) xác nhận đã nhận ${full?'đủ':'một phần'} số tiền ${money(c.thuc)} VNĐ từ ${e(x.muon)} bằng hình thức ${e(x.pt)}, thanh toán cho khoản nợ theo biên lai số ${e(x.ref)}. ${full?'Khoản nợ đã được tất toán, hai bên không còn nghĩa vụ tài chính liên quan đến khoản nợ này.':'Số tiền còn lại '+money(c.con)+' VNĐ tiếp tục được ghi nhận là nợ cho đến khi thanh toán xong.'} Biên lai này có giá trị pháp lý làm căn cứ giải quyết nghĩa vụ tài chính giữa hai bên.</div>
+<div class="sg"><div><b class="t">NGƯỜI NHẬN TIỀN</b><i>(Ký và ghi rõ họ tên)</i><div class="nm">${e(x.cho)}</div></div><div><b class="t">NGƯỜI TRẢ NỢ</b><i>(Ký và ghi rõ họ tên)</i><div class="nm">${e(x.muon)}</div></div></div></div>`}
+function impform(){const a=hist().filter(h=>h.t=='bl');return `<label>Lấy thông tin từ biên lai ghi nợ đã lưu</label><select onchange="imp(this.value)"><option value="">— Chọn biên lai —</option>${a.map(h=>`<option value="${h.id}">${e(h.d.code)} · ${e(h.d.muon)} · ${money(h.d.tien)}</option>`).join('')}</select>`}
+function imp(id){const h=find(id);if(!h)return;const x=h.d,H=hs(x);Object.assign(d,{ref:x.code,ngayGoc:x.ngay,cho:x.cho,muon:x.muon,tien:x.tien,han:H[H.length-1].han,lai:x.lai,phi:x.phi});if(has(x.phiNR)){d.phiNR=x.phiNR;d.ttNR=x.ttNR}build()}
+const shrink=(f,m,q)=>new Promise(res=>{const r=new FileReader();r.onload=()=>{const im=new Image();im.onload=()=>{const s=Math.min(1,m/Math.max(im.width,im.height)),c=document.createElement('canvas');c.width=Math.round(im.width*s);c.height=Math.round(im.height*s);const t=c.getContext('2d');t.fillStyle='#fff';t.fillRect(0,0,c.width,c.height);t.drawImage(im,0,0,c.width,c.height);res(c.toDataURL('image/jpeg',q))};im.onerror=()=>res('');im.src=r.result};r.onerror=()=>res('');r.readAsDataURL(f)});
+function pform(){const P=d.proofs||[];return `<label>Ảnh xác minh thanh toán (bill chuyển khoản, ảnh chụp tiền mặt, biên nhận… tối đa 4 ảnh)</label><input type="file" accept="image/*" multiple onchange="upProof([...this.files]);this.value=''">`+(P.length?`<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:10px">${P.map((u,i)=>`<div style="position:relative"><img src="${u}" style="width:72px;height:72px;object-fit:cover;border-radius:6px;border:1px solid var(--line)"><button class="btn r s" style="position:absolute;top:-8px;right:-8px;padding:1px 7px" onclick="pdel(${i})">×</button></div>`).join('')}</div>`:'')}
+async function upProof(fs){d.proofs=d.proofs||[];for(const f of fs){if(d.proofs.length>=4){alert('Tối đa 4 ảnh xác minh cho mỗi biên lai.');break}const u=await shrink(f,1100,.82);if(u)d.proofs.push(u)}build()}
+function pdel(i){d.proofs.splice(i,1);build()}
 
 cnt();build();
 </script>
